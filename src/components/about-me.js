@@ -1,5 +1,12 @@
+import classes from "./about-me.module.css";
+
 const AboutMe = () => {
-  return console.log("this is About Me section");
+  return (
+    <div>
+      <p>Name</p>
+      <p>Email</p>
+    </div>
+  );
 };
 
 export default AboutMe;
