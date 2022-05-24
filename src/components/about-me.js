@@ -3,8 +3,9 @@ import classes from "./about-me.module.css";
 const AboutMe = () => {
   return (
     <div className={classes}>
-      <p>Name</p>
-      <p>Email</p>
+      <button type="button" className="btn btn-primary">
+        Primary
+      </button>
     </div>
   );
 };
