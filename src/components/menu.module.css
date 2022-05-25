@@ -18,3 +18,7 @@ ul li {
   flex-grow: 2;
   justify-content: flex-end;
 }
+
+a:link {
+  margin: 20px;
+}
