@@ -1,0 +1,20 @@
+.container {
+  display: flex;
+}
+
+img {
+  width: 70px;
+}
+
+ul {
+  display: flex;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.item3 {
+  flex-grow: 2;
+  justify-content: flex-end;
+}
