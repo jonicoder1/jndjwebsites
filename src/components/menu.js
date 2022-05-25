@@ -5,7 +5,7 @@ const Menu = () => {
   return (
     <div className={classes.container}>
       <img src={logo} alt="jndj logo" />
-      <h3>JNDJWEBSITE™</h3>
+      <h3 className={classes.h3}>JNDJWEBSITE™</h3>
       <ul className={classes.item3}>
         <li>
           <a href="#home">Home</a>
