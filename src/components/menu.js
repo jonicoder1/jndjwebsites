@@ -4,9 +4,13 @@ import logo from "../images/jndj-logo.png";
 const Menu = () => {
   return (
     <div className={classes.container}>
-      <img src={logo} alt="jndj logo" />
-      <h3 className={classes.h3}>JNDJWEBSITE™</h3>
-      <ul className={classes.item3}>
+      <div className={classes.item1}>
+        <img src={logo} alt="jndj logo" />
+        <h3>
+          <div className={classes.name}>JNDJWEBSITE™</div>
+        </h3>
+      </div>
+      <ul className={classes.item2}>
         <li>
           <a href="#home">Home</a>
         </li>

@@ -1,5 +1,5 @@
 img {
-  width: 70px;
+  width: 80px;
 }
 
 ul {
@@ -13,19 +13,25 @@ ul li {
   border-radius: 10px;
   list-style-type: none;
   align-self: center;
-  background-color: rgba(0, 235, 235, 0.833);
+  background-color: rgba(0, 220, 220, 0.64);
 }
 
-h3 {
-  align-self: center;
+.name {
+  margin: 10px;
+  border: 10px;
+  padding: 10px;
 }
 
 .container {
   display: flex;
-  margin: 40px;
+  margin: 20px 150px;
+  justify-content: space-between;
 }
 
-.item3 {
-  flex-grow: 2;
-  justify-content: flex-end;
+.item1 {
+  display: flex;
+}
+
+.item2 {
+  margin: 10px;
 }
