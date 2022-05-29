@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jndjwebsites/static/css/main.10f90f91.css",
+    "main.js": "/jndjwebsites/static/js/main.cb7e1b2f.js",
+    "static/media/jndj-logo.png": "/jndjwebsites/static/media/jndj-logo.24a52e9504755ea58d53.png",
+    "static/media/small_circle.png": "/jndjwebsites/static/media/small_circle.8e69888c35eb0beec9a7.png",
+    "index.html": "/jndjwebsites/index.html",
+    "main.10f90f91.css.map": "/jndjwebsites/static/css/main.10f90f91.css.map",
+    "main.cb7e1b2f.js.map": "/jndjwebsites/static/js/main.cb7e1b2f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.10f90f91.css",
+    "static/js/main.cb7e1b2f.js"
+  ]
+}
