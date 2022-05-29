@@ -1,3 +1,48 @@
+.container {
+  height: 100vh;
+}
+
 p {
-  font: 10px;
+  font-size: 20px;
+  width: 1152px;
+  height: 535px;
+  left: 146px;
+  top: 217px;
+  padding: 40px 0 0 0;
+  margin: auto;
+
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 188.02%;
+  /* or 47px */
+
+  text-align: center;
+  letter-spacing: 0.14em;
+
+  color: #3e3e3e;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+.textContainer {
+  position: relative;
+  margin: auto;
+  border-radius: 20px;
+  width: 80vw;
+
+  background: rgb(52, 247, 249);
+  background: linear-gradient(
+    0deg,
+    rgba(52, 247, 249, 1) 0%,
+    rgba(253, 187, 45, 0.38981530112044815) 100%
+  );
+}
+
+.smallCircle {
+  position: absolute;
+  right: 1250px;
+  top: 50px;
 }
