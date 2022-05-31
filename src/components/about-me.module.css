@@ -3,18 +3,12 @@
 }
 
 p {
-  font-size: 20px;
-  width: 1152px;
-  height: 535px;
-  left: 146px;
-  top: 217px;
-  padding: 40px 0 0 0;
-  margin: auto;
+  padding: 35px;
 
   font-style: normal;
   font-weight: 600;
-  font-size: 25px;
-  line-height: 188.02%;
+  font-size: 1.2rem;
+  line-height: 188%;
   /* or 47px */
 
   text-align: center;
@@ -31,7 +25,7 @@ h1 {
   position: relative;
   margin: auto;
   border-radius: 20px;
-  width: 80vw;
+  width: 75vw;
 
   background: rgb(52, 247, 249);
   background: linear-gradient(
