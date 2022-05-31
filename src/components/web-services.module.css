@@ -1,0 +1,30 @@
+.container {
+  height: 100vh;
+  width: 80vw;
+  margin: auto;
+}
+
+.priceContainer {
+  background: grey;
+  border-radius: 20px;
+}
+
+ul {
+  display: block;
+  padding: 0;
+}
+
+.topDiv {
+  height: 40vh;
+  margin: 0 7%;
+}
+
+.botDiv {
+  margin: 0 7%;
+}
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
