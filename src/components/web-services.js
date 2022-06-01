@@ -1,69 +1,72 @@
 import classes from "./web-services.module.css";
 
 const WebServices = () => {
-  const CardHandler = () => {
-    const cards = [
-      {
-        Title: "Basic",
-        id: 0,
-        list1: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
-        list2: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
-        button: "Buy Now",
-      },
-      {
-        Title: "Intermediate",
-        id: 1,
-        list1: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
-        list2: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
-        button: "Buy Now",
-      },
-      {
-        Title: "Advanced",
-        id: 3,
-        list1: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
-        list2: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
-        button: "Buy Now",
-      },
-    ];
+  const cards = [
+    {
+      Title: "Basic",
+      id: 0,
+      list1: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
+      list2: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
+      button: "Buy Now",
+    },
+    {
+      Title: "Intermediate",
+      id: 1,
+      list1: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5", "lorem6"],
+      list2: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
+      button: "Buy Now",
+    },
+    {
+      Title: "Advanced",
+      id: 3,
+      list1: [
+        "lorem1",
+        "lorem2",
+        "lorem3",
+        "lorem4",
+        "lorem5",
+        "lorem6",
+        "lorem7",
+      ],
+      list2: ["lorem1", "lorem2", "lorem3", "lorem4", "lorem5"],
+      button: "Buy Now",
+    },
+  ];
 
-    const cardsMap = cards.map((card) => {
-      return (
-        <div className={classes.card} id={card.id}>
-          <h4>{card.Title}</h4>
-          <div className={classes.topDiv}>
-            <ul>
-              <li>{card.list1[0]}</li>
-              <li>{card.list1[1]}</li>
-              <li>{card.list1[2]}</li>
-              <li>{card.list1[3]}</li>
-              <li>{card.list1[4]}</li>
-            </ul>
-            <button className={classes.button}>Buy Now</button>
-          </div>
-          <div className={classes.botDiv}>
-            <ul>
-              <li>{card.list2[0]}</li>
-              <li>{card.list2[1]}</li>
-              <li>{card.list2[2]}</li>
-              <li>{card.list2[3]}</li>
-              <li>{card.list2[4]}</li>
-            </ul>
-            <button className={classes.button}>Buy Now</button>
-          </div>
+  const CardsMap = cards.map((card) => {
+    const buyNow = <button className={classes.button}>Buy Now</button>;
+    const cardTitle = <h4>{card.Title}</h4>;
+    let list1 = [];
+    let list2 = [];
+
+    for (let i = 0; i < card.list1.length; i++) {
+      list1.push(<li key={Math.random()}>{card.list1[i]}</li>);
+    }
+
+    for (let i = 0; i < card.list2.length; i++) {
+      list2.push(<li key={Math.random()}>{card.list2[i]}</li>);
+    }
+
+    return (
+      <div className={classes.card} key={card.id}>
+        {cardTitle}
+        <div className={classes.topDiv}>
+          <ul>{list1}</ul>
+          {buyNow}
         </div>
-      );
-    });
-
-    return cardsMap;
-  };
+        <div className={classes.botDiv}>
+          <ul>{list2}</ul>
+          {buyNow}
+        </div>
+      </div>
+    );
+  });
 
   return (
     <div className={`${classes.container} ${classes}`}>
       <h1>Web Services Section</h1>
       <h3>Simple Website Design Packages & Pricing</h3>
-      <div className={classes.cardsContainer}>
-        <CardHandler />
-      </div>
+      <div className={classes.cardsContainer}>{CardsMap}</div>
     </div>
   );
 };
