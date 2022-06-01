@@ -4,27 +4,47 @@
   margin: auto;
 }
 
-.priceContainer {
+.card {
+  width: 30%;
+  margin: 20px;
   background: grey;
   border-radius: 20px;
 }
 
+h4 {
+  display: flex;
+  padding: 30px 30px 10px 50px;
+}
+
 ul {
   display: block;
-  padding: 0;
+  padding: 0px;
+  margin: 0px;
 }
 
 .topDiv {
+  display: flex;
+  flex-direction: column;
   height: 40vh;
   margin: 0 7%;
 }
 
 .botDiv {
+  display: flex;
+  flex-direction: column;
   margin: 0 7%;
 }
 
 .button {
+  background-color: aqua;
+  border-radius: 20px;
+  margin: 15px;
+  align-self: flex-end;
+  padding: 10px;
+  border: 10px;
+  border-radius: 10px;
+}
+
+.cardsContainer {
   display: flex;
-  flex-direction: column;
-  align-self: flex-start;
 }

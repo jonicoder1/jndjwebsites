@@ -10,7 +10,7 @@ function App() {
       <Menu />
       <AboutMe />
       <WebServices />
-      <Contact />
+      {/* <Contact /> */}
     </div>
   );
 }
