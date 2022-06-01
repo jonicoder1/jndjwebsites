@@ -33,5 +33,6 @@ ul li {
 }
 
 .item2 {
+  display: flex;
   margin: 10px;
 }
