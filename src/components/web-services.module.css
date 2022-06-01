@@ -26,7 +26,7 @@ ul {
   display: flex;
   flex-direction: column;
   height: 40vh;
-  margin: 0 7%;
+  margin: 0 7% 110px 7%;
 }
 
 .botDiv {
